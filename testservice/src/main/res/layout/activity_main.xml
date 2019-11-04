@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_play"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="播放音乐/启动服务"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:onClick="playMusic"/>
+
+    <Button
+        android:id="@+id/btn_pause"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/btn_play"
+        android:gravity="center"
+        android:text="暂停音乐"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:onClick="pauseMusic"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/btn_pause"
+        android:gravity="center"
+        android:text="停止音乐/停止服务"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:onClick="stopMusic"/>
+
+</android.support.constraint.ConstraintLayout>
